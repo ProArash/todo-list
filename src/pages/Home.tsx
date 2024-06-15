@@ -11,16 +11,16 @@ import {
     AppBar,
     Typography,
 } from "@mui/material";
-import { FaCheck, FaCheckCircle, FaEraser, FaPlus } from "react-icons/fa";
+import { FaCheck, FaCheckCircle, FaEraser, FaPen, FaPlus } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 
 export default function Home() {
     const dummyData = [
-        { number: 1, title: "Hack the planet", status: true },
-        { number: 2, title: "Hack the FBI", status: true },
-        { number: 2, title: "Hack the 1230", status: false },
-        { number: 2, title: "Hack the x123x", status: true },
-        { number: 2, title: "Hack the 23x123x", status: false },
+        { number: 1, title: "Learn TS", status: true },
+        { number: 2, title: "Learn Python", status: true },
+        { number: 3, title: "Learn c#", status: false },
+        { number: 4, title: "Learn Java", status: true },
+        { number: 5, title: "Learn Flutter", status: false },
     ];
     return (
         <>
@@ -108,7 +108,7 @@ export default function Home() {
                                         >
                                             <TableCell>
                                                 <Button variant="contained">
-                                                    {row.number}
+                                                    <FaPen/>
                                                 </Button>
                                             </TableCell>
                                             <TableCell>{row.title}</TableCell>
